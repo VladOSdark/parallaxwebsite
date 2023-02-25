@@ -9,32 +9,42 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
+    <script src="/libs/gsap/gsap.min.js" defer></script>
+    <script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+
     <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="layers">
-            <div class="layer__header">
-                <div class="layers__caption">Welcome to Parallax</div>
-                <div class="layers__title">Fairy Forest</div>
-            </div>
-            <div class="layer layers__base" style="background-image: url(images/layer-base.png);"></div>
-            <div class="layer layers__middle" style="background-image: url(images/layer-middle.png);"></div>
-            <div class="layer layers__front" style="background-image: url(images/layer-front.png);"></div>
+    <div class="wrapper">
+        <div class="content">
+
+            <header class="main-header">
+                <div class="layers">
+                    <div class="layer__header">
+                        <div class="layers__caption">Welcome to Parallax</div>
+                        <div class="layers__title">Fairy Forest</div>
+                    </div>
+                    <div class="layer layers__base" style="background-image: url(images/layer-base.png);"></div>
+                    <div class="layer layers__middle" style="background-image: url(images/layer-middle.png);"></div>
+                    <div class="layer layers__front" style="background-image: url(images/layer-front.png);"></div>
+                </div>
+            </header>
+            <article class="main-article" style="background-image: url(images/dungeon.jpg);">
+                <div class="main-article__content">
+                    <h2 class="main-article__header">To be continued</h2>
+                    <p class="main-article__paragraph">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga dolorum, asperiores nisi,
+                        necessitatibus ab accusamus unde commodi autem maxime dolore placeat. Quidem earum impedit tempore
+                        velit, et soluta ab. Illo, quam?
+                    </p>
+                </div>
+                <div class="copy">© KurwaDesign Master</div>
+            </article>
+
         </div>
-    </header>
-    <article class="main-article" style="background-image: url(images/dungeon.jpg);">
-        <div class="main-article__content">
-            <h2 class="main-article__header">To be continued</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga dolorum, asperiores nisi,
-                necessitatibus ab accusamus unde commodi autem maxime dolore placeat. Quidem earum impedit tempore
-                velit, et soluta ab. Illo, quam?
-            </p>
-        </div>
-        <div class="copy">© KurwaDesign Master</div>
-    </article>
+    </div>
 </body>
 
 </html>
